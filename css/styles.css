@@ -242,6 +242,12 @@ footer{
     max-width: none;
 }
 
+.txt_plano {
+    color: white;
+    margin-bottom: 10px;
+
+}
+
 figure{
     margin: 0;
     background: rgb(176, 64, 12);
