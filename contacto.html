@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaSync Contacto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <span class="logo_name"><svg class="logo">
+                <path d="M12 30a20 20 0 0 1 34-14M52 34a20 20 0 0 1-34 14" fill="none" stroke="#F26A00" stroke-width="6" stroke-linecap="round"/>
+                <path d="M44 8l10 10-14 2zM20 56L10 46l14-2z" fill="#F26A00"/>
+                <path d="M32 24l3 5 5 3-5 3-3 5-3-5-5-3 5-3z" fill="#fff"/>
+            </svg>InnovaSync</span>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section class="seccion">
+        <!-- INFORMACION DE CONTACTO -->
+        <div class="contenedor col contacto">
+            <div>
+                <h2>Contactanos a:</h2>
+                <div class="actividad info_contacto">
+                <p><strong>Dirección:</strong> Av. Bolivar No 300, Tacna - Perú</p>
+                <p><strong>Horario:</strong> lunes a viernes, 8:30 a 17:30</p>
+                <p><strong>Teléfono:</strong> +51 991 555 444</p>
+                <p><strong>Correo:</strong> contacto@innovasync.pe</p>
+            </div>
+        </div>
+
+        <!-- FORMULARIO DE USUARIO -->
+        <form>
+            <fieldset>
+                <legend>Tus datos</legend>
+                <label for="nombre">Nombre o empresa</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </fieldset>
+
+            <fieldset>
+                <legend>Tu requerimiento</legend>
+                <label for="servicio">Tipo de servicio</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Elige una opción</option>
+                    <option>Diseño arquitectónico</option>
+                    <option>Supervisión de obras</option>
+                    <option>Proyecto de inversión</option>
+                </select>
+
+                <label for="mensaje">Descripción</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <label class="check">
+                <input type="checkbox" name="acepto" required>
+                <span>Acepto que usen mis datos para responder esta solicitud.</span>
+                </label>
+            </fieldset>
+
+            <button class="boton" type="submit">Enviar</button>
+        </form>
+    </section>
+    </main>
+
+<footer class="footer footer_contacto">
+    <p>© 2026 InnovaSync S.A.C. · Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

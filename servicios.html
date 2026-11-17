@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <span class="logo_name"><svg class="logo">
+                <path d="M12 30a20 20 0 0 1 34-14M52 34a20 20 0 0 1-34 14" fill="none" stroke="#F26A00" stroke-width="6" stroke-linecap="round"/>
+                <path d="M44 8l10 10-14 2zM20 56L10 46l14-2z" fill="#F26A00"/>
+                <path d="M32 24l3 5 5 3-5 3-3 5-3-5-5-3 5-3z" fill="#fff"/>
+            </svg>InnovaSync</span>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="seccion">
+            <div class="contenedor">
+                <h2>Servicios técnicos</h2>
+                <div class="actividades">
+                    <div class="actividad" id="arquitectura">
+                        <h3>Diseño arquitectónico</h3>
+                        <p>Anteproyectos, expedientes técnicos, planos y modelado 3D.</p>
+                    </div>
+                    <div class="actividad" id="supervision">
+                        <h3>Supervisión de obras</h3>
+                        <p>Control de calidad, valorizaciones e informes mensuales.</p>
+                    </div>
+                    <div class="actividad" id="inversion">
+                        <h3>Proyectos de inversión</h3>
+                        <p>Perfiles, fichas técnicas y evaluación económica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion tono">
+            <div class="contenedor">
+                <h2>Plano interactivo</h2>
+                <p>Haz clic en una zona del plano para ir al detalle del servicio.</p>
+                <figure>
+                    <div class="contenedor_plano">
+                        <img src="./imagenes/plano.png" width="100%" height="100%" usemap="#mapa-plano" alt="Plano de Obra">
+                    </div>
+                    <figcaption>Izquierda: diseño · Centro: supervisión · Derecha: inversión.</figcaption>
+                    </figure>
+
+                <map name="mapa-plano">
+                    <area shape="rect" coords="30,90,300,525" href="#arquitectura" alt="Diseño arquitectónico">
+                    <area shape="rect" coords="315,90,600,525" href="#supervision" alt="Supervisión de obras">
+                    <area shape="rect" coords="615,90,870,525" href="#inversion" alt="Proyectos de inversión">
+                </map>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <h2>Cronograma de fases de inversión</h2>
+                <div class="contenedor_tabla">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Fase</th>
+                            <th>Actividad</th>
+                            <th>Duración</th>
+                            <th>Entregable</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>1. Idea y perfil</td><td>Diagnóstico del proyecto</td><td>4 semanas</td><td>Perfil</td></tr>
+                        <tr><td>2. Formulación</td><td>Estudios y evaluación</td><td>8 semanas</td><td>Ficha técnica</td></tr>
+                        <tr><td>3. Diseño</td><td>Planos y especificaciones</td><td>10 semanas</td><td>Expediente técnico</td></tr>
+                        <tr><td>4. Ejecución</td><td>Construcción y supervisión</td><td>6 a 18 meses</td><td>Informes mensuales</td></tr>
+                        <tr><td>5. Cierre</td><td>Liquidación y entrega</td><td>6 semanas</td><td>Acta de cierre</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer_contacto">
+        <p>© 2026 InnovaSync S.A.C. · Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

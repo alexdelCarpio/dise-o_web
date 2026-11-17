@@ -3,96 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" Este es mi primer portafolio web donde subire todos mis proyectos">
-    <title>Mi portafolio web</title>
-    <meta name="keywords" content="portafolio">
-    <style>
-        /* img{
-            width: 100px;
-        } */
-        *{
-            background-color: #111827;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-    </style>
+    <meta name="description" content="InnovaSync, Consultoria de Proyectos">
+    <title>InnovaSync Ingeniería y más </title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-           <li><a href="#">Inicio</a></li>
-           <li><a href="#">Proyectos</a></li>
-           <li><a href="#">Habilidades</a></li>
-           <li><a href="#">Contacto</a></li> 
-        </ul>
-    </nav>
-    <section>
-        <div>
-            <p>🖐Hola soy</p>
-            <h1>Alejandro</h1>
-            <p>Desarrollador web</p>
-
+    <header>
+        <div class="barra">
+            <span class="logo_name"><svg class="logo" viewBox="0 0 64 64">
+                <path d="M12 30a20 20 0 0 1 34-14M52 34a20 20 0 0 1-34 14" fill="none" stroke="#F26A00" stroke-width="6" stroke-linecap="round"/>
+                <path d="M44 8l10 10-14 2zM20 56L10 46l14-2z" fill="#F26A00"/>
+                <path d="M32 24l3 5 5 3-5 3-3 5-3-5-5-3 5-3z" fill="#fff"/>
+            </svg>InnovaSync</span>
+            <nav class="nav">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
         </div>
-        <div>
-            <img src="./projects/coding.svg" alt="Desarrollador" width="100px">
+    </header>
+    
+    <div class="portada">
+        <img class="portada_img" src="./imagenes/banner-1920.jpg" alt="portada_principal">
+        <div class="text_portada">
+            <h1>de la abstracción a la realidad ...</h1>
+            <p>Diseño, supervisión y desarrollo de proyectos de inversión</p>
+            <p><a class="boton" href="contacto.html">CONTACTAR</a></p>
         </div>
-    </section>
+    </div>
 
-    <section>
-        <h2 style="text-decoration:solid blue;">Proyectos</h2>
-        <div>
-            <div>
-                <img src="./projects/SectProyect1.svg" alt="">               
-                <img src="./projects/SectProyect2.svg" alt="">
-            </div>
-
-            <div>
-                <img src="./images/projects/SectProyect3.svg" alt="">
-                <img src="./images/projects/SectProyect4.svg" alt="">
-
-             </div>
-        </div>
-
-    </section>
-    <section>
-        <h2>Habilidades</h2>
-        <div>
-            <div>
-                <span><img src="./habilidades/Docker.svg" alt=""/>Docker</span> 
-                <span><img src="./habilidades/Html.svg" alt="">HTML5</span> 
-                <span><img src="./habilidades/typescript.svg" alt="">TypeScript</span>
-                <span><img src="./habilidades/MongoDB.svg" alt="">MongoDB</span>
+    <main>
+        <section class="seccion">
+            <div class="contenedor col">
+                <figure>
+                    <img src="./imagenes/supervisor.jpg" alt="supervor_obra">
+                    <figcaption>Supervisión en campo de nuestras obras</figcaption>
+                </figure>
             </div>
             <div>
-                <span><img src="./habilidades/Git.svg" alt="">Git</span> 
-                <span><img src="./habilidades/css.svg" alt="">CSS3</span> 
-                <span><img src="./habilidades/reactjs.svg" alt="">React</span>
-                <span><img src="./habilidades/MSSQL.svg" alt="">MSSQL</span>
+                <h2>QUIENES SOMOS</h2>
+                <p><strong>InnovaSync S.A.C.</strong> es una empresa peruana que integra arquitectura, supervisión de obras y proyectos de inversión publica y privada.</p>
+                <p>Trabajamos para que cada proyecto tenga el mejor diseño y dimensión, se construya bien y se entregue a tiempo.</p>
             </div>
-            <div>
-                <span><img src="./habilidades/Figma.svg" alt="">Figma</span> 
-                <span><img src="./habilidades/Vector.svg" alt="">TailwindCSS</span> 
-                <span><img src="./habilidades/vue.svg" alt="">Vue</span>
-                <span><img src="./habilidades/pgsql.svg" alt="">PostgreSQL</span>
+        </section>    
+        <section class="seccion tono">    
+            <div class="p_secundario columna">
+                <h2 class="texto">QUE HACEMOS</h2>
+                <div class="actividades">
+                    <div class="actividad">
+                        <h3>Diseño arquitectónico</h3>
+                        <p>Anteproyectos, planos y expedientes técnicos.</p>
+                    </div>
+                    <div class="actividad">
+                        <h3>Supervisión de obras</h3>
+                        <p>Control de calidad, plazos y costos.</p>
+                    </div>
+                    <div class="actividad">
+                        <h3>Proyectos de inversión</h3>
+                        <p>Formulación, evaluación y cronograma.</p>
+                    </div>
+                </div>
+                <p><a class="boton" href="servicios.html">CONOCER MÁS</a></p>
             </div>
-            <div>
-                <span><img src="./habilidades/node-js.svg" alt="">Node.js</span> 
-                <span><img src="./habilidades/javascript.svg" alt="">JavaScript</span> 
-                <span><img src="./habilidades/nestjs.svg" alt="">Nest.Js</span>
-            </div>
-
-        </div>
-
-    </section>
-    <section>
-        <div>
-            <h2>Contacto</h2>
-            <span><img src="./habilidades/contacto/in.svg" alt=""></span>
-            <span><img src="./habilidades/contacto/GitHub.svg" alt=""></span>
-            <span><img src="./habilidades/contacto/outlook.svg" alt=""></span>
-        </div>
-    </section>
-
+        </section>
+    </main>
+    <footer class="footer"><p>© 2026 InnovaSync S.A.C. · Todos los derechos reservados</p></footer>
 </body>
 </html>
